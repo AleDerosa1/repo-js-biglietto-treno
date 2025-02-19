@@ -5,8 +5,6 @@ RACCOLTA DATI
 */
 const km = prompt("Quanti km devi percorrere?");
 const age = prompt("Qual'è la tua età?");
-isNaN(km);
-isNaN(age);
 console.log("kilometri: " + km);
 console.log("età: " + age);
 
@@ -19,8 +17,14 @@ ESECUZIONE DATI
 */
     let price = km * 0.21;
 console.log("prezzo intero: " + price);
+const kmstr = parseInt(km);
+const agestr = parseInt(age);
 let discount;
-if (age<18 ) {
+if (isNaN(km),isNaN(age)) {
+    console.log("Inserisci valori numerici");
+} else 
+
+    if (age<18 ) {
     discount = 20;
 } else if (age>=65) {
     discount = 40;
